@@ -33,13 +33,3 @@ load_plugin_textdomain( 'acf-costing-table', false, dirname( plugin_basename(__F
 
 // plug into ACF5
 add_action('acf/include_field_types', function() { require_once 'field/class-acf-costing-table.php'; } );
-
-
-function my_the_content_filter($content) {
-	// assuming you have created a page/post entitled 'debug'
-	    $test = get_field( 'calculator', 133 );
-
-		print_r( $test );
-}
-
-add_filter( 'wp_footer', 'my_the_content_filter' );
