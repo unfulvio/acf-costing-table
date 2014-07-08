@@ -1,0 +1,115 @@
+.acf-input .costing_table {
+
+	// add/remove/calc buttons
+	.acf-costing_table-buttons {
+		float: right;
+		margin-top: -35px;
+		ul li {
+			display: inline-block;
+		}
+		.acf-costing_table-calc {
+			margin-left: 10px;
+		}
+	}
+
+	table.acf-costing_table {
+
+		thead {
+			tr {
+				&:first-of-type th {
+					font-style:italic
+				}
+				&:nth-of-type(2) th {
+					font-weight:bold;
+					background:#F9F9F9;
+				}
+				th {
+					color: #4A4A4A;
+					text-align: center;
+				}
+
+			}
+		}
+
+		tbody {
+			tr {
+				td {
+					text-align: center;
+					vertical-align: middle;
+					border-width: 1px;
+					border-style: solid;
+					border-color: #EDEDED;
+					border-bottom: 0;
+					border-right: 0;
+					abbr {
+						border-bottom: 1px dashed #CACACA;
+						cursor: help;
+					}
+				}
+				&:first-of-type td {
+					border-right: 1px;
+					border-top: 0;
+				}
+			}
+		}
+
+		tfoot {
+			tr {
+				&:first-of-type {
+					th {
+						&:first-of-type{
+							font-style: italic;
+							text-align: left;
+						}
+					}
+				}
+				&:nth-of-type(2) th {
+					font-weight:bold;
+					background:#F9F9F9;
+					color:#4A4A4A;
+				}
+				th {
+					text-align: center;
+				}
+			}
+		}
+
+		input[type="number"] {
+			padding-left: 20px;
+			text-align: center !important;
+			box-shadow: none !important;
+			-moz-box-shadow: none !important;
+			border: none !important;
+		}
+
+	}
+
+
+	.day_count {
+		text-align: center;
+		color:#AAA;
+		text-shadow: 0 1px #FFF;
+		border-right-color: #E1E1E1;
+		background: #f4f4f4
+	}
+
+}
+
+@media (max-width: 1340px) {
+
+	.acf-costing_table,
+	.acf-costing_table table {
+		width: 100%;
+		overflow-x: scroll;
+		overflow-y: hidden;
+		-webkit-overflow-scrolling: touch;
+		-ms-overflow-style:-ms-autohiding-scrollbar
+	}
+
+	.acf-costing_table table tr th,
+	.acf-costing_table table tr td {
+		min-width: 50px !important;
+		white-space: nowrap !important
+	}
+
+}
