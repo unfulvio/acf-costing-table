@@ -14,7 +14,7 @@
  * Plugin Name:       Advanced Custom Fields: Costing Table field
  * Plugin URI:        https://github.com/nekojira/acf-costing-table
  * Description:       Costing Table field for Advanced Custom Fields 5.
- * Version:           1.0
+ * Version:           1.0.0
  * Author:            nekojira
  * Author URI:        https://github.com/nekojira/
  * Text Domain:       acf-costing_table

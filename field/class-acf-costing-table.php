@@ -100,6 +100,8 @@ class ACF_Costing_Table extends acf_field {
 	 * @param 	int		$post_id	post to which the field is attached
 	 * @param 	object	$field		the field
 	 *
+	 * @since	1.0.0
+	 *
 	 * @return	array	will return an array with the costing table totals
 	 */
 	function format_value( $value, $post_id, $field ) {
@@ -112,9 +114,8 @@ class ACF_Costing_Table extends acf_field {
 		}
 
 		$data =  json_decode( $value );
-		$totals = isset( $data->finals ) ? $data->finals : '';
 
-		return (array) $totals;
+		return $data;
 	}
 
 }
